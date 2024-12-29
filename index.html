@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Sukh Guest House</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Smooth Scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="brand-name">King Sukh Guest House</h1>
+            <p class="slogan">Experience Comfort & Luxury in the Heart of the City</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <button class="nav-btn" onclick="window.location.href='#about'">About Us</button>
+        <button class="nav-btn" onclick="window.location.href='#rooms'">Rooms</button>
+        <button class="nav-btn" onclick="window.location.href='#gallery'">Gallery</button>
+        <button class="nav-btn" onclick="window.location.href='#contact'">Contact</button>
+        <button class="nav-btn" onclick="window.location.href='#testimonials'">Testimonials</button>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Welcome to King Sukh Guest House</h2>
+            <p>Located in a prime location, our guest house offers premium accommodations with modern amenities and a touch of luxury, perfect for business and leisure travelers.</p>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <div class="rooms-header">
+            <h2>Our Rooms</h2>
+            <p>Discover our comfortable and stylish rooms designed to meet all your needs.</p>
+        </div>
+        <div class="room-cards">
+            <div class="room-card">
+                <img src="assets/room1.jpg" alt="Deluxe Room" class="room-image">
+                <h3>Deluxe Room</h3>
+                <p>A spacious room with premium facilities, perfect for a luxury stay.</p>
+            </div>
+            <div class="room-card">
+                <img src="assets/room2.jpg" alt="Standard Room" class="room-image">
+                <h3>Standard Room</h3>
+                <p>A cozy and comfortable room, ideal for a short stay.</p>
+            </div>
+            <div class="room-card">
+                <img src="assets/room3.jpg" alt="Suite Room" class="room-image">
+                <h3>Suite Room</h3>
+                <p>A large suite with extra comfort and stunning views.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="gallery-header">
+            <h2>Gallery</h2>
+            <p>Take a look at our beautiful guest house.</p>
+        </div>
+        <div class="gallery-images">
+            <div class="gallery-image" style="background-image: url('assets/gallery1.jpg');"></div>
+            <div class="gallery-image" style="background-image: url('assets/gallery2.jpg');"></div>
+            <div class="gallery-image" style="background-image: url('assets/gallery3.jpg');"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>We are happy to assist you with any inquiries or bookings.</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="testimonials-header">
+            <h2>What Our Guests Say</h2>
+            <p>Read feedback from our satisfied customers.</p>
+        </div>
+        <div class="testimonials-cards">
+            <div class="testimonial-card">
+                <p>"The guest house is fantastic! A serene atmosphere with excellent services." - John Doe</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"I had a wonderful stay! The staff were friendly, and the room was spotless." - Jane Smith</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 King Sukh Guest House. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Form Submission -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will respond soon.');
+            document.getElementById('contact-form').reset();
+        });
+    </script>
+
+</body>
+
+</html>
